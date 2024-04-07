@@ -70,7 +70,7 @@ const fetchingredients = (meal) => {
     }
   }
   ingredients.innerHTML = `
-  <h6>Ingregients required-:</h1>
+  <h6>Ingredients required-:</h1>
   <ul>${ingredientslist}</ul>
   <hr>`;
   console.log(`these are ${ingredientslist}`);
