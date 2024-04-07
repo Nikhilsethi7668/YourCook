@@ -1,0 +1,417 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* background-color: black; */
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.navbar {
+    width: 100%;
+    height: 10vh;
+    /* background-color: rgb(9, 175, 45); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3vh;
+    /* position: fixed; */
+}
+
+
+
+.navbar h1 {
+    padding: 2vh 2vw;
+    font-size: 200%;
+    height: 100%;
+}
+
+.right form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* background-color: rebeccapurple; */
+    padding: 1vh;
+    gap: 9vw;
+}
+
+.right form button {
+    background-color: rgb(237, 73, 73);
+    height: 70%;
+    border-radius: 10px;
+    width: 20%;
+    padding: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.right #searchbox {
+    height: 80%;
+    width: 50%;
+    border-radius: 10px;
+    font-size: 5vh;
+    color: black;
+}
+
+.itemlist {
+    margin-top: 8vh;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+.itemlist .item {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    height: 40vh;
+    border: 2px solid white;
+    /* justify-content: space-between; */
+    /* gap: -5vh; */
+    /* gap: 200px; */
+}
+
+.item img {
+    height: 25vh;
+    /* object-fit: cover; */
+    /* transform: translate(-50%, -50%); */
+}
+
+.item button {
+    height: 99%;
+    width: 40%;
+    background-color: rgb(247, 75, 75);
+    color: black;
+    border-radius: 5px;
+    border: 0px;
+    display: inline;
+    margin: auto;
+    margin-bottom: 1vh;
+}
+
+.box {
+    width: 60%;
+    height: 70%;
+    background-color: white;
+    color: black;
+    font-size: 5vh;
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: scroll;
+    background-color: black;
+
+}
+
+.cut {
+    height: 10%;
+    width: 10%;
+    background-color: black;
+    border: none;
+    position: fixed;
+    left: 90%;
+    top: 2%;
+
+
+
+}
+
+.cut i {
+    position: fixed;
+    top: 2%;
+    left: 48%;
+    /* background-color: aqua; */
+    height: 10%;
+    width: 6%;
+    left: 95%;
+}
+
+.cut button {
+    height: 10px;
+    width: 10px;
+    background-color: black;
+
+    border: 0px;
+}
+
+.cut button:hover {
+    cursor: pointer;
+    /* background-color: rgb(37, 37, 37); */
+}
+
+.ingredients {
+    height: fit-content;
+    width: 100%;
+    color: white;
+    /* background-color: rgb(162, 69, 69); */
+    position: relative;
+    /* top: -80%; */
+    object-fit: cover;
+    overflow: scroll;
+
+}
+
+.ingredients p {
+    margin: 0px;
+    padding: 0px;
+    height: 10%;
+    padding: 0.5vh;
+    font-size: 3vh;
+}
+
+.name {
+    height: fit-content;
+}
+
+.ingredients h6 {
+    padding: 1vh;
+    height: 2vh;
+    margin-bottom: 2vh;
+    font-weight: 1000;
+    font-style: italic;
+
+}
+
+.recipe {
+    height: fit-content;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.recipe h6 {
+    margin-bottom: 3vh;
+    position: relative;
+    left: 40%;
+    margin-top: 2vh;
+}
+
+.recipe p {
+    padding: 2vh;
+    line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+
+    .navbar {
+
+        width: 100%;
+        height: fit-content;
+        /* background-color: rgb(9, 175, 45); */
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        align-items: center;
+        margin-top: 3vh;
+        /* position: fixed; */
+    }
+
+    .right form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        width: 100%;
+        /* background-color: rebeccapurple; */
+        padding: 1vh;
+        gap: 9vw;
+    }
+
+    .navbar h1 {
+        padding: 2vh 2vw;
+        font-size: 200%;
+        height: 100%;
+        margin-left: 20vw;
+
+    }
+
+    .right form button {
+        background-color: rgb(237, 73, 73);
+        height: 70%;
+        border-radius: 10px;
+        width: 20%;
+        padding: 2vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    .right #searchbox {
+        height: 40%;
+        width: 80%;
+        border-radius: 10px;
+        font-size: 5vh;
+        color: black;
+    }
+
+    .itemlist {
+        margin-top: 8vh;
+        height: 100%;
+        flex-wrap: wrap;
+        width: 90%;
+        display: flex;
+        /* flex-direction: column; */
+        align-items: center;
+        justify-content: center;
+        /* background-color: red; */
+        margin: 8vh auto;
+        gap: 4vh;
+    }
+
+    .itemlist .item {
+        display: flex;
+        /* flex-direction: column; */
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 60vh;
+        border: 2px solid white;
+    }
+
+    .item img {
+        height: 25vh;
+        /* object-fit: cover; */
+        /* transform: translate(-50%, -50%); */
+    }
+
+    .item button {
+        height: 99%;
+        width: 40%;
+        background-color: rgb(247, 75, 75);
+        color: black;
+        border-radius: 5px;
+        border: 0px;
+        display: inline;
+        margin: 1vh auto;
+        margin-bottom: 1vh;
+    }
+
+    .box {
+        width: 60%;
+        height: 50%;
+        /* background-color: white; */
+        color: black;
+        font-size: 5vh;
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        overflow: scroll;
+        background-color: black;
+
+    }
+
+    .cut {
+        height: 10%;
+        width: 10%;
+        background-color: black;
+        border: none;
+        position: fixed;
+        left: 90%;
+        top: 2%;
+
+
+
+    }
+
+    .cut i {
+        position: fixed;
+        top: 2%;
+        left: 48%;
+        /* background-color: aqua; */
+        height: 10%;
+        width: 6%;
+        left: 95%;
+    }
+
+    .cut button {
+        height: 10px;
+        width: 10px;
+        background-color: black;
+
+        border: 0px;
+    }
+
+    .cut button:hover {
+        cursor: pointer;
+        /* background-color: rgb(37, 37, 37); */
+    }
+
+    .ingredients {
+        height: fit-content;
+        width: 100%;
+        color: white;
+        /* background-color: rgb(162, 69, 69); */
+        position: relative;
+        /* top: -80%; */
+        object-fit: cover;
+        overflow: scroll;
+
+    }
+
+    .ingredients p {
+        margin: 0px;
+        padding: 0px;
+        height: 10%;
+        padding: 0.5vh;
+        font-size: 3vh;
+    }
+
+    .name {
+        height: fit-content;
+    }
+
+    .ingredients h6 {
+        padding: 1vh;
+        height: 2vh;
+        margin-bottom: 2vh;
+        font-weight: 1000;
+        font-style: italic;
+
+    }
+
+    .recipe {
+        height: fit-content;
+        width: 100%;
+        /* background-color: red; */
+    }
+
+    .recipe h6 {
+        margin-bottom: 3vh;
+        position: relative;
+        left: 40%;
+        margin-top: 2vh;
+    }
+
+    .recipe p {
+        padding: 2vh;
+        line-height: 1.5;
+    }
+
+
+
+
+
+}
