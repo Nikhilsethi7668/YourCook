@@ -222,9 +222,10 @@ body {
 
     html,
     body {
-        width: fit-content;
+        width: 100%;
         height: 100%;
         background-color: yellow;
+        overflow-x: hidden;
     }
 
 
@@ -325,8 +326,8 @@ body {
     }
 
     .box {
-        width: fit-content;
-        height: 50%;
+        width: 80vw;
+        height: 70%;
         /* background-color: white; */
         color: black;
         font-size: 5vh;
@@ -334,25 +335,22 @@ body {
         position: fixed;
         z-index: 9999;
         top: 50%;
-        left: 40%;
+        left: 50%;
         transform: translate(-50%, -50%);
-        overflow: scroll;
+        overflow-x: hidden;
+        overflow-y: scroll;
         background-color: rgb(195, 255, 205);
+
 
     }
 
     .cut {
         height: 10%;
         width: 10%;
-        /* background-color: black; */
         border: none;
         position: fixed;
-
         left: 90%;
         top: 2%;
-
-
-
     }
 
     .cut i {
@@ -401,6 +399,8 @@ body {
 
     .name {
         height: fit-content;
+        /* margin: auto; */
+        /* display: inline; */
     }
 
     .ingredients h6 {
@@ -409,6 +409,7 @@ body {
         margin-bottom: 2vh;
         font-weight: 1000;
         font-style: italic;
+        text-wrap: wrap;
 
     }
 
@@ -421,7 +422,7 @@ body {
     .recipe h6 {
         margin-bottom: 3vh;
         position: relative;
-        left: 40%;
+        left: 18vw;
         margin-top: 2vh;
     }
 
